@@ -1,0 +1,115 @@
+// .footer {
+//   padding-top: 48px;
+//   padding-bottom: 40px;
+
+//   @media screen and (min-width: $desktop) {
+//     padding-top: 112px;
+//     padding-bottom: 120px;
+//   }
+// }
+
+// .footer__container {
+//   @media screen and (min-width: $desktop) {
+//     display: flex;
+//   }
+// }
+
+// .footer__logo {
+//   font-weight: 600;
+//   font-size: 20px;
+
+//   @media screen and (min-width: $desktop) {
+//     font-weight: 600;
+//     font-size: 41px;
+//   }
+// }
+
+// .footer__wrapper {
+//   position: relative;
+//   margin-top: 16px;
+
+//   @media screen and (min-width: $desktop) {
+//     margin-top: 0;
+//     margin-left: 160px;
+
+//     display: flex;
+//     flex-grow: 1;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
+// }
+
+// .footer__list {
+//   display: flex;
+
+//   @media screen and (max-width: ($desktop - 1)) {
+//     flex-direction: column;
+//     gap: 16px;
+
+//     font-family: var(--brand-second-font);
+//     font-size: 14px;
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     gap: 120px;
+
+//     font-weight: 300;
+//     font-size: 18px;
+//   }
+// }
+
+// .footer__item {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 8px;
+
+//   font-family: var(--brand-second-font);
+//   font-size: 14px;
+//   @media screen and (min-width: $desktop) {
+//     gap: 16px;
+
+//     font-family: var(--brand-main-font);
+//     font-weight: 300;
+//     font-size: 18px;
+//   }
+// }
+
+// .footer__socials {
+//   @media screen and (max-width: ($desktop - 1)) {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//   }
+// }
+
+// .socials {
+//   display: flex;
+//   gap: 10px;
+//   justify-content: center;
+// }
+
+// .socials__item {
+//   transition: scale 250ms ease;
+
+//   &:hover,
+//   &:focus {
+//     scale: 1.1;
+//   }
+// }
+
+// .socials__link {
+//   transition: scale 250ms ease;
+//   .socials__item:hover &,
+//   .socials__item:focus & {
+//     scale: 1.01;
+//   }
+// }
+
+// .footer__link {
+//   transition: color 250ms ease;
+
+//   &:hover,
+//   &:focus {
+//     color: var(--brand-white-color);
+//   }
+// }

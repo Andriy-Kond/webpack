@@ -1,0 +1,33 @@
+//  text-shadow: <зміщення по x>, <зміщення по y>, <радіус розмиття>, <колір>
+//  box-shadow: <x-offset> <y-offset> <blur> <spread> <color>
+//  box-shadow: inset <x-offset> <y-offset> <blur> <spread> <color>
+//  text-shadow: <зміщення по x>, <зміщення по y>, <радіус розмиття>, <колір>
+
+//  vertical-align: bottom; - delete 4px in bottom of tag <a>
+
+//  Вибрати чекбокси: .topic-options input[type="checkbox"]
+//  before, after можна додавати лише на елементи з контентом. Якщо тег одинарний (нема закриваючих дужок - img, input), то в них нема контенту, тому до них застосувати before і after  неможливо. Тому щоби поставити іконку у input треба додавати, наприклад, span з абсолютним позиціонуванням
+
+//  outline: 1px solid black; - визначення для візуального орієнтиру
+
+// todo Переробити галерею в секції journey to grid
+// todo Додати JS
+// todo translate to CamelCase
+
+@import "./base/modern-normalize-v2.0.0";
+@import "./base/project-normalize";
+@import "./base/breakpoints";
+@import "./utils/variables";
+
+@import "./common/visually-hidden";
+@import "./common/container";
+@import "./common/common";
+
+@import "./components/section";
+@import "./components/buttons";
+@import "./components/modal";
+@import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+
+@import "./components/footer";

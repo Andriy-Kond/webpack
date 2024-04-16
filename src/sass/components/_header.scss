@@ -1,0 +1,218 @@
+// //^ Header
+// .navigation {
+//   display: flex;
+//   flex-direction: column;
+//   border-bottom: 1px solid var(--brand-white-color);
+//   position: relative;
+//   height: 72px;
+
+//   @media screen and (min-width: $desktop) {
+//     height: auto;
+//     display: flex;
+//     padding-top: 40px;
+//     padding-bottom: 14px;
+//   }
+// }
+
+// .navigation__wrapper {
+//   position: relative;
+
+//   width: 100vw;
+//   max-width: 360px;
+//   margin: 0 auto;
+
+//   @media screen and (min-width: $desktop) {
+//     position: static;
+//     max-width: $desktop;
+//   }
+// }
+
+// .menu__btn {
+//   position: absolute;
+//   z-index: 5;
+//   top: 16px;
+//   right: 20px;
+
+//   background-color: transparent;
+
+//   cursor: pointer;
+//   transition: scale 250ms ease;
+
+//   &:hover,
+//   &:focus {
+//     scale: 1.1;
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     display: none;
+//   }
+// }
+
+// .menu {
+//   display: flex;
+//   justify-content: space-between;
+
+//   @media screen and (max-width: ($desktop - 1)) {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: 1;
+
+//     width: 100%;
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding-top: 16px;
+//     padding-left: 20px;
+//     padding-right: 20px;
+//     padding-bottom: 40px;
+
+//     flex-direction: column;
+
+//     background-color: var(--brand-white-color);
+//     opacity: 0;
+//     visibility: hidden;
+
+//     transition: opacity 250ms ease;
+
+//     &.is-open {
+//       opacity: 1;
+//       visibility: visible;
+//     }
+//   }
+
+//   @media screen and (max-width: ($desktop - 1)) {
+//     // orange line-border
+//     &::before {
+//       content: '';
+//       position: absolute;
+//       top: 72px;
+//       left: 0;
+//       z-index: 2;
+
+//       height: 1px;
+//       width: 100%;
+
+//       background-color: var(--brand-main-color);
+//     }
+
+//     // bg image in mobile menu
+//     &::after {
+//       content: '';
+//       height: 195px;
+
+//       background-image: url('../images/mobile/giraffe-hero-140.png');
+//       background-image: image-set(
+//         url('../images/mobile/giraffe-hero-140.png') 1x,
+//         url('../images/mobile/giraffe-hero-280-2x.png') 2x,
+//         url('../images/mobile/giraffe-hero-420-3x.png') 3x
+//       );
+//       background-size: contain;
+//       background-repeat: no-repeat;
+//       background-position: center;
+
+//       @media screen and (min-width: $desktop) {
+//         background-image: url('../images/desktop/giraffe-hero-539.png');
+//         background-image: image-set(
+//           url('../images/desktop/giraffe-hero-539.png') 1x,
+//           url('../images/desktop/giraffe-hero-1078-2x.png') 2x,
+//           url('../images/desktop/giraffe-hero-1617-3x.png') 3x
+//         );
+//       }
+//     }
+//   }
+// }
+
+// .menu__title {
+//   font-weight: 600;
+//   font-size: 32px;
+
+//   @media screen and (min-width: $desktop) {
+//     display: none;
+//   }
+// }
+// .menu-list {
+//   margin-top: 34px;
+
+//   display: flex;
+//   flex-direction: column;
+//   gap: 16px;
+
+//   @media screen and (min-width: $desktop) {
+//     margin-top: 0;
+
+//     flex-direction: row;
+//     gap: 12px;
+//   }
+// }
+
+// .menu-list__item {
+//   padding: 8px;
+
+//   font-weight: 300;
+//   font-size: 20px;
+
+//   transition: color 250ms ease, scale 250ms ease;
+
+//   &:hover,
+//   &:focus {
+//     scale: 1.01;
+//     color: var(--brand-main-color);
+
+//     @media screen and (min-width: $desktop) {
+//       color: var(--brand-white-color);
+//     }
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     padding: 14px 10px;
+//     font-size: 26px;
+//   }
+// }
+
+// .navigation.is-open .menu__icon-menu {
+//   display: none;
+// }
+
+// .menu__icon-cross {
+//   display: none;
+
+//   .navigation.is-open & {
+//     display: block;
+//   }
+// }
+
+// .contacts {
+//   display: none;
+
+//   @media screen and (min-width: $desktop) {
+//     display: flex;
+//     gap: 24px;
+//   }
+// }
+
+// .contacts__link {
+//   display: block;
+//   width: 40px;
+//   height: 40px;
+//   background-position: center;
+
+//   transition: scale 250ms ease;
+
+//   &--phone-icon {
+//     background-image: url('../images/svg/phone.svg');
+//   }
+
+//   &--location-icon {
+//     background-image: url('../images/svg/location.svg');
+//   }
+
+//   &--email-icon {
+//     width: 44px;
+//     background-image: url('../images/svg/email.svg');
+//   }
+
+//   &:hover,
+//   &:focus {
+//     scale: 1.1;
+//   }
+// }

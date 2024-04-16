@@ -1,0 +1,53 @@
+/* ========== СКИДАННЯ СТИЛІВ ==========  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; // для старих браузерів
+}
+
+// Знімає стилізацію з ul
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// Знімає стилізацію з <a>
+a,
+svg {
+  text-decoration: none;
+  color: inherit;
+
+  // delete 4px in bottom of tag <a>:
+  // або display: flex/block;
+  // або vertical-align:bottom;
+  vertical-align: bottom;
+}
+
+//  Заборона зміну розміру в textarea
+textarea {
+  resize: none;
+}
+
+// прибирає нахил за замовчуванням
+address {
+  font-style: normal;
+}
+
+button {
+  padding: 0;
+}
+
+/* ========== /СКИДАННЯ СТИЛІВ ========== */

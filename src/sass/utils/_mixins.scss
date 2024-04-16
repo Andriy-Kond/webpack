@@ -1,0 +1,9 @@
+@mixin font($font, $weight) {
+  font-family: $font;
+  font-weight: $weight;
+}
+
+// Використання:
+// .section {
+//   @include font(""Roboto", sans-serif", 400);
+// }

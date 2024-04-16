@@ -1,0 +1,10 @@
+body {
+  font-family: var(--brand-main-font);
+
+  background-color: var(--brand-main-color);
+  color: var(--brand-black-color);
+}
+
+body.modal-open {
+  overflow: hidden;
+}
