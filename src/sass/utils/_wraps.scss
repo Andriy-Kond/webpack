@@ -1,0 +1,15 @@
+.wrap {
+  display: block;
+}
+
+.wrap-at-mobile {
+  @media screen and (max-width: ($desktop - 1)) {
+    display: block;
+  }
+}
+
+.wrap-at-desktop {
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
+}

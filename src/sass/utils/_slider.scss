@@ -1,0 +1,114 @@
+.reviews__list.slick-slider,
+.team__list.slick-slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media screen and (min-width: $desktop) {
+    flex-wrap: nowrap;
+    gap: 64px;
+    align-items: center;
+  }
+}
+
+.slick-track {
+  display: flex;
+  gap: 20px;
+
+  .team & {
+    height: 300px;
+
+    @media screen and (min-width: $desktop) {
+      height: 928px;
+    }
+  }
+
+  .reviews & {
+    height: 340px;
+
+    @media screen and (min-width: $desktop) {
+      height: 340px;
+    }
+  }
+}
+
+.team__item.slick-center {
+  // height: 928px;
+  // width: 476px;
+  scale: 1;
+}
+
+.slick-prev {
+  margin-top: 24px;
+  background-color: transparent;
+  align-self: center;
+
+  @media screen and (max-width: ($desktop - 1)) {
+    order: 1;
+  }
+}
+
+.slick-next {
+  order: 2;
+  align-self: end;
+  background-color: transparent;
+
+  transform: rotate(180deg);
+
+  @media screen and (min-width: $desktop) {
+    align-self: center;
+  }
+}
+
+.btn-arrow-icon {
+  font-size: 0;
+  width: 66px;
+  height: 66px;
+
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+
+  transition: fill 250ms ease, border-color 250ms ease,
+    background-color 250ms ease;
+
+  &:disabled {
+    fill: var(--disabled-text-color);
+    background-color: var(--disabled-btn-color);
+    border-color: var(--disabled-btn-color);
+  }
+
+  &--orange {
+    fill: var(--brand-main-color);
+    border-color: var(--brand-main-color);
+    background-color: transparent;
+
+    &:hover,
+    &:focus {
+      fill: var(--brand-white-color);
+      background-color: var(--brand-main-color);
+      border-color: var(--brand-main-color);
+    }
+  }
+
+  &--white {
+    fill: var(--brand-white-color);
+    background-color: transparent;
+    border-color: var(--brand-white-color);
+
+    &:hover,
+    &:focus {
+      fill: var(--brand-main-color);
+      background-color: var(--brand-white-color);
+      border-color: var(--brand-white-color);
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    min-width: 106px;
+    height: 106px;
+    margin-top: 0;
+  }
+}

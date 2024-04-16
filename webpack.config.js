@@ -1,3 +1,5 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require("path");
 
 module.exports = {
@@ -6,6 +8,11 @@ module.exports = {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
   },
+
+  plugins: [
+    new HtmlWebpackPlugin({ template: "src/index.html" }),
+    new MiniCssExtractPlugin({ filename: "styles.css" }),
+  ],
 
   devServer: {
     static: {
@@ -28,7 +35,8 @@ module.exports = {
         test: /\.s[ac]ss$/i,
         use: [
           // Creates `style` nodes from JS strings
-          "style-loader",
+          // "style-loader", // вже не потрібен, бо є MiniCssExtractPlugin.loader
+          MiniCssExtractPlugin.loader,
           // Translates CSS into CommonJS
           "css-loader",
           // Compiles Sass to CSS
